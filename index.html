@@ -191,7 +191,7 @@ function isWithinOperatingHours(timeString) {
 // D Utility Function 3: findBooking
 function findBooking(podId, timeString) {
   for (let i = 0; i < bookings.length; i++) {
-    if (bookings[i].podId === podId  && bookings[i].time === timeString /* strict comparison */) {
+    if (bookings[i].podId === podId  && bookings[i].time === timeString ) {
       return bookings[i];
     }
   }
